@@ -1,0 +1,17 @@
+# docker-compose for development setup
+version: '3'
+
+services:
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 3000:3000
+      - 5858:5858
+    volumes:
+      - ./api:/app:delegated
+    command: sh -c "npm run start:dev"
