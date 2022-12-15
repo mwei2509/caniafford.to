@@ -29,7 +29,6 @@ jobs:
           path: lambdas/projections
           platform: linux/amd64
           push-image: true
-          region: AWS_REGION
           registry-id: AWS_ECR_REGISTRY_ID
           repo: projections
           tag: "latest"
