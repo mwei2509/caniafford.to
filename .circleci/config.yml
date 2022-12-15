@@ -29,6 +29,7 @@ jobs:
           aws-cli-version: latest
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           path: lambdas/projections
+          build-path: lambdas/projections
           platform: linux/amd64
           push-image: true
           registry-id: AWS_ECR_REGISTRY_ID
