@@ -22,6 +22,8 @@ jobs:
       AWS_ECR_REGISTRY_ID: "352871558742"
     steps:
       - checkout
+      - setup_remote_docker:
+          version: 20.10.14
       - aws-ecr/build-and-push-image:
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-cli-version: latest
