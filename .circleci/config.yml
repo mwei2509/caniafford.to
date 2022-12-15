@@ -15,7 +15,8 @@ workflows:
 jobs:
   build-and-push-image:
     docker:
-      - image: cimg/base
+      - image: cimg/base:2022.12
+    resource_class: small
     environment:
       AWS_REGION: us-east-1
       AWS_ECR_REGISTRY_ID: "352871558742"
