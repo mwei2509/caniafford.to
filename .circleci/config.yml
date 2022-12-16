@@ -41,10 +41,18 @@ jobs:
       - run:
           name: deploy to lambda
           command: |
-            new_image_sha=$(aws ecr describe-images \
-              --repository-name projections \
-              --filter tagStatus=TAGGED \
-              | jq -c '.imageDetails[] | select([.imageTags[] == "$CIRCLE_TAG"] | any) | .imageDigest');
+            attempts=0
+            new_image_sha=
+            while [ $attempts -le 5 && -z "$new_image_sha" ]; do
+              new_image_sha=$(aws ecr describe-images \
+                --repository-name projections \
+                --filter tagStatus=TAGGED \
+                | jq -c '.imageDetails[] | select([.imageTags[] == "$CIRCLE_TAG"] | any) | .imageDigest');
+              if [ -z $new_image_sha ]; then
+                sleep 10
+              fi
+            done
+
             echo image sha $new_image_sha
             echo circle tag $CIRCLE_TAG
 
