@@ -49,6 +49,7 @@ jobs:
                 --filter tagStatus=TAGGED \
                 | jq -c '.imageDetails[] | select([.imageTags[] == "$CIRCLE_TAG"] | any) | .imageDigest');
               if [ -z $new_image_sha ]; then
+                attempts++
                 sleep 10
               fi
             done
