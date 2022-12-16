@@ -9,9 +9,12 @@ workflows:
       - build-and-push-image:
           context:
             - aws-ecr
+          # Only run this job on git tag pushes
           filters:
             branches:
-              only: main
+              ignore: /.*/
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*(-.*)*/
 jobs:
   build-and-push-image:
     docker:
@@ -34,4 +37,4 @@ jobs:
           push-image: true
           registry-id: AWS_ECR_REGISTRY_ID
           repo: projections
-          tag: "latest"
+          tag: $CIRCLE_TAG

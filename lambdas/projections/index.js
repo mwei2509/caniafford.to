@@ -1,6 +1,6 @@
-const runProjection = require('./dist/index.js');
+const runProjections = require("./dist/index.js");
 
 exports.handler = async (event, context) => {
-    const projection = await runProjection(event);
-    return projection
-}
+  const projection = await runProjections.default(event);
+  return projection;
+};
