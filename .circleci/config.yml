@@ -38,3 +38,15 @@ jobs:
           registry-id: AWS_ECR_REGISTRY_ID
           repo: projections
           tag: $CIRCLE_TAG
+      - run:
+          name: deploy to lambda
+          command: |
+            new_image_sha=$(aws ecr describe-images \
+              --repository-name projections \
+              --filter tagStatus=TAGGED \
+              | jq -c '.imageDetails[] | select([.imageTags[] == "$CIRCLE_TAG"] | any) | .imageDigest');
+
+            new_image_uri="$AWS_ECR_REGISTRY_ID.dkr.ecr.us-east-1.amazonaws.com/projections@$new_image_sha"
+
+            aws lambda update-function-code --function-name caniaffordto_projections \
+            --image-uri $new_image_uri
