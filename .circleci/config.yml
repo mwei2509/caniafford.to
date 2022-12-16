@@ -45,6 +45,8 @@ jobs:
               --repository-name projections \
               --filter tagStatus=TAGGED \
               | jq -c '.imageDetails[] | select([.imageTags[] == "$CIRCLE_TAG"] | any) | .imageDigest');
+            echo image sha $new_image_sha
+            echo circle tag $CIRCLE_TAG
 
             new_image_uri="$AWS_ECR_REGISTRY_ID.dkr.ecr.us-east-1.amazonaws.com/projections@$new_image_sha"
 
