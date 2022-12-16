@@ -46,6 +46,7 @@ jobs:
               --filter tagStatus=TAGGED \
               | jq -c ".imageDetails[] | select([.imageTags[] == \"$CIRCLE_TAG\"] | any) | .imageDigest");
 
+            new_image_sha=$(echo "$new_image_sha" | tr -d '"')
             echo image sha $new_image_sha
             echo circle tag $CIRCLE_TAG
 
