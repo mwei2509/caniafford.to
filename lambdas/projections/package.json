@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/typescript/bin/tsc"
+    "build": "./node_modules/typescript/bin/tsc",
+    "start:dev": "./node_modules/nodemon/bin/nodemon.js --watch './**/*.ts' --exec 'ts-node' src/server.ts -- --inspect=0.0.0.0:5858"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
   }
 }

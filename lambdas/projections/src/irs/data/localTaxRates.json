@@ -1,0 +1,27 @@
+{
+  "NYC": {
+    "single": [
+      {
+        "rate": 0.03078,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03762,
+        "bracket": 12000
+      },
+      {
+        "rate": 0.03819,
+        "bracket": 50000
+      },
+      {
+        "rate": 0.05876,
+        "bracket": 10000000
+      }
+    ],
+    "married": [],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  }
+}

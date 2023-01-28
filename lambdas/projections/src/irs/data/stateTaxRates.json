@@ -1,0 +1,1998 @@
+{
+  "AL": {
+    "single": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 500
+      },
+      {
+        "rate": 0.05,
+        "bracket": 3000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 1000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 6000
+      }
+    ],
+    "deduction": {
+      "single": 2500,
+      "married": 7500
+    }
+  },
+  "AZ": {
+    "single": [
+      {
+        "rate": 0.0259,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0334,
+        "bracket": 26500
+      },
+      {
+        "rate": 0.0417,
+        "bracket": 53000
+      },
+      {
+        "rate": 0.045,
+        "bracket": 159000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0259,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0334,
+        "bracket": 53000
+      },
+      {
+        "rate": 0.0417,
+        "bracket": 106000
+      },
+      {
+        "rate": 0.045,
+        "bracket": 318000
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "AR": {
+    "single": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 4000
+      },
+      {
+        "rate": 0.059,
+        "bracket": 8000
+      },
+      {
+        "rate": 0.066,
+        "bracket": 79300
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 4000
+      },
+      {
+        "rate": 0.059,
+        "bracket": 8000
+      },
+      {
+        "rate": 0.066,
+        "bracket": 79300
+      }
+    ],
+    "deduction": {
+      "single": 2200,
+      "married": 4400
+    }
+  },
+  "CA": {
+    "single": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      },
+      {
+        "rate": 0.02,
+        "bracket": 8809
+      },
+      {
+        "rate": 0.04,
+        "bracket": 20883
+      },
+      {
+        "rate": 0.06,
+        "bracket": 32960
+      },
+      {
+        "rate": 0.08,
+        "bracket": 45753
+      },
+      {
+        "rate": 0.093,
+        "bracket": 57824
+      },
+      {
+        "rate": 0.103,
+        "bracket": 295373
+      },
+      {
+        "rate": 0.113,
+        "bracket": 354445
+      },
+      {
+        "rate": 0.123,
+        "bracket": 590742
+      },
+      {
+        "rate": 0.133,
+        "bracket": 1000000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      },
+      {
+        "rate": 0.02,
+        "bracket": 17618
+      },
+      {
+        "rate": 0.04,
+        "bracket": 41766
+      },
+      {
+        "rate": 0.06,
+        "bracket": 65920
+      },
+      {
+        "rate": 0.08,
+        "bracket": 91506
+      },
+      {
+        "rate": 0.093,
+        "bracket": 115648
+      },
+      {
+        "rate": 0.103,
+        "bracket": 590746
+      },
+      {
+        "rate": 0.113,
+        "bracket": 708890
+      },
+      {
+        "rate": 0.123,
+        "bracket": 1000000
+      },
+      {
+        "rate": 0.133,
+        "bracket": 1181484
+      }
+    ],
+    "deduction": {
+      "single": 4537,
+      "married": 9074
+    }
+  },
+  "CO": {
+    "single": [
+      {
+        "rate": 0.0463,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0463,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "CT": {
+    "single": [
+      {
+        "rate": 0.03,
+        "bracket": 0
+      },
+      {
+        "rate": 0.05,
+        "bracket": 10000
+      },
+      {
+        "rate": 0.055,
+        "bracket": 50000
+      },
+      {
+        "rate": 0.06,
+        "bracket": 100000
+      },
+      {
+        "rate": 0.065,
+        "bracket": 200000
+      },
+      {
+        "rate": 0.069,
+        "bracket": 250000
+      },
+      {
+        "rate": 0.0699,
+        "bracket": 500000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.03,
+        "bracket": 0
+      },
+      {
+        "rate": 0.05,
+        "bracket": 20000
+      },
+      {
+        "rate": 0.055,
+        "bracket": 100000
+      },
+      {
+        "rate": 0.06,
+        "bracket": 200000
+      },
+      {
+        "rate": 0.065,
+        "bracket": 400000
+      },
+      {
+        "rate": 0.069,
+        "bracket": 500000
+      },
+      {
+        "rate": 0.0699,
+        "bracket": 1000000
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "DE": {
+    "single": [
+      {
+        "rate": 0.022,
+        "bracket": 2000
+      },
+      {
+        "rate": 0.039,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.048,
+        "bracket": 10000
+      },
+      {
+        "rate": 0.052,
+        "bracket": 20000
+      },
+      {
+        "rate": 0.0555,
+        "bracket": 25000
+      },
+      {
+        "rate": 0.066,
+        "bracket": 60000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.022,
+        "bracket": 2000
+      },
+      {
+        "rate": 0.039,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.048,
+        "bracket": 10000
+      },
+      {
+        "rate": 0.052,
+        "bracket": 20000
+      },
+      {
+        "rate": 0.0555,
+        "bracket": 25000
+      },
+      {
+        "rate": 0.066,
+        "bracket": 60000
+      }
+    ],
+    "deduction": {
+      "single": 3250,
+      "married": 6500
+    }
+  },
+  "GA": {
+    "single": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      },
+      {
+        "rate": 0.02,
+        "bracket": 750
+      },
+      {
+        "rate": 0.03,
+        "bracket": 2250
+      },
+      {
+        "rate": 0.04,
+        "bracket": 3750
+      },
+      {
+        "rate": 0.05,
+        "bracket": 5250
+      },
+      {
+        "rate": 0.0575,
+        "bracket": 7000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      },
+      {
+        "rate": 0.02,
+        "bracket": 1000
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3000
+      },
+      {
+        "rate": 0.04,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 7000
+      },
+      {
+        "rate": 0.0575,
+        "bracket": 10000
+      }
+    ],
+    "deduction": {
+      "single": 4600,
+      "married": 6000
+    }
+  },
+  "HI": {
+    "single": [
+      {
+        "rate": 0.014,
+        "bracket": 0
+      },
+      {
+        "rate": 0.032,
+        "bracket": 2400
+      },
+      {
+        "rate": 0.055,
+        "bracket": 4800
+      },
+      {
+        "rate": 0.064,
+        "bracket": 9600
+      },
+      {
+        "rate": 0.068,
+        "bracket": 14400
+      },
+      {
+        "rate": 0.072,
+        "bracket": 19200
+      },
+      {
+        "rate": 0.076,
+        "bracket": 24000
+      },
+      {
+        "rate": 0.079,
+        "bracket": 36000
+      },
+      {
+        "rate": 0.0825,
+        "bracket": 48000
+      },
+      {
+        "rate": 0.09,
+        "bracket": 150000
+      },
+      {
+        "rate": 0.1,
+        "bracket": 175000
+      },
+      {
+        "rate": 0.11,
+        "bracket": 200000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.014,
+        "bracket": 0
+      },
+      {
+        "rate": 0.032,
+        "bracket": 4800
+      },
+      {
+        "rate": 0.055,
+        "bracket": 9600
+      },
+      {
+        "rate": 0.064,
+        "bracket": 19200
+      },
+      {
+        "rate": 0.068,
+        "bracket": 28800
+      },
+      {
+        "rate": 0.072,
+        "bracket": 38400
+      },
+      {
+        "rate": 0.076,
+        "bracket": 48000
+      },
+      {
+        "rate": 0.079,
+        "bracket": 72000
+      },
+      {
+        "rate": 0.0825,
+        "bracket": 96000
+      },
+      {
+        "rate": 0.09,
+        "bracket": 300000
+      },
+      {
+        "rate": 0.1,
+        "bracket": 350000
+      },
+      {
+        "rate": 0.11,
+        "bracket": 400000
+      }
+    ],
+    "deduction": {
+      "single": 2200,
+      "married": 4400
+    }
+  },
+  "ID": {
+    "single": [
+      {
+        "rate": 0.01125,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03125,
+        "bracket": 1541
+      },
+      {
+        "rate": 0.03625,
+        "bracket": 3081
+      },
+      {
+        "rate": 0.04625,
+        "bracket": 4622
+      },
+      {
+        "rate": 0.05625,
+        "bracket": 6162
+      },
+      {
+        "rate": 0.06625,
+        "bracket": 7703
+      },
+      {
+        "rate": 0.06925,
+        "bracket": 11554
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.01125,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03125,
+        "bracket": 3082
+      },
+      {
+        "rate": 0.03625,
+        "bracket": 6162
+      },
+      {
+        "rate": 0.04625,
+        "bracket": 9244
+      },
+      {
+        "rate": 0.05625,
+        "bracket": 12324
+      },
+      {
+        "rate": 0.06625,
+        "bracket": 15406
+      },
+      {
+        "rate": 0.06925,
+        "bracket": 23108
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "IL": {
+    "single": [
+      {
+        "rate": 0.0495,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0495,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "IN": {
+    "single": [
+      {
+        "rate": 0.0323,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0323,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "IA": {
+    "single": [
+      {
+        "rate": 0.0033,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0067,
+        "bracket": 1638
+      },
+      {
+        "rate": 0.0225,
+        "bracket": 3276
+      },
+      {
+        "rate": 0.0414,
+        "bracket": 6552
+      },
+      {
+        "rate": 0.0563,
+        "bracket": 14742
+      },
+      {
+        "rate": 0.0596,
+        "bracket": 24570
+      },
+      {
+        "rate": 0.0625,
+        "bracket": 32760
+      },
+      {
+        "rate": 0.0744,
+        "bracket": 49140
+      },
+      {
+        "rate": 0.0853,
+        "bracket": 73710
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0033,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0067,
+        "bracket": 1638
+      },
+      {
+        "rate": 0.0225,
+        "bracket": 3276
+      },
+      {
+        "rate": 0.0414,
+        "bracket": 6552
+      },
+      {
+        "rate": 0.0563,
+        "bracket": 14742
+      },
+      {
+        "rate": 0.0596,
+        "bracket": 24570
+      },
+      {
+        "rate": 0.0625,
+        "bracket": 32760
+      },
+      {
+        "rate": 0.0744,
+        "bracket": 49140
+      },
+      {
+        "rate": 0.0853,
+        "bracket": 73710
+      }
+    ],
+    "deduction": {
+      "single": 2080,
+      "married": 5120
+    }
+  },
+  "KS": {
+    "single": [
+      {
+        "rate": 0.031,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0525,
+        "bracket": 15000
+      },
+      {
+        "rate": 0.057,
+        "bracket": 30000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.031,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0525,
+        "bracket": 30000
+      },
+      {
+        "rate": 0.057,
+        "bracket": 60000
+      }
+    ],
+    "deduction": {
+      "single": 3000,
+      "married": 7500
+    }
+  },
+  "KY": {
+    "single": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 2650,
+      "married": 5300
+    }
+  },
+  "LA": {
+    "single": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 12500
+      },
+      {
+        "rate": 0.06,
+        "bracket": 50000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 25000
+      },
+      {
+        "rate": 0.06,
+        "bracket": 100000
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "ME": {
+    "single": [
+      {
+        "rate": 0.058,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0675,
+        "bracket": 22200
+      },
+      {
+        "rate": 0.0715,
+        "bracket": 52600
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.058,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0675,
+        "bracket": 44450
+      },
+      {
+        "rate": 0.0715,
+        "bracket": 105200
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "MD": {
+    "single": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03,
+        "bracket": 1000
+      },
+      {
+        "rate": 0.04,
+        "bracket": 2000
+      },
+      {
+        "rate": 0.0475,
+        "bracket": 3000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 100000
+      },
+      {
+        "rate": 0.0525,
+        "bracket": 125000
+      },
+      {
+        "rate": 0.055,
+        "bracket": 150000
+      },
+      {
+        "rate": 0.0575,
+        "bracket": 250000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03,
+        "bracket": 1000
+      },
+      {
+        "rate": 0.04,
+        "bracket": 2000
+      },
+      {
+        "rate": 0.0475,
+        "bracket": 3000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 150000
+      },
+      {
+        "rate": 0.0525,
+        "bracket": 175000
+      },
+      {
+        "rate": 0.055,
+        "bracket": 225000
+      },
+      {
+        "rate": 0.0575,
+        "bracket": 300000
+      }
+    ],
+    "deduction": {
+      "single": 2250,
+      "married": 4500
+    }
+  },
+  "MA": {
+    "single": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "MI": {
+    "single": [
+      {
+        "rate": 0.0425,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0425,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "MN": {
+    "single": [
+      {
+        "rate": 0.0535,
+        "bracket": 0
+      },
+      {
+        "rate": 0.068,
+        "bracket": 26960
+      },
+      {
+        "rate": 0.0785,
+        "bracket": 88550
+      },
+      {
+        "rate": 0.0985,
+        "bracket": 164400
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0535,
+        "bracket": 0
+      },
+      {
+        "rate": 0.068,
+        "bracket": 39410
+      },
+      {
+        "rate": 0.0785,
+        "bracket": 156570
+      },
+      {
+        "rate": 0.0985,
+        "bracket": 273470
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "MS": {
+    "single": [
+      {
+        "rate": 0.03,
+        "bracket": 1000
+      },
+      {
+        "rate": 0.04,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 10000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.03,
+        "bracket": 1000
+      },
+      {
+        "rate": 0.04,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 10000
+      }
+    ],
+    "deduction": {
+      "single": 2300,
+      "married": 4600
+    }
+  },
+  "MO": {
+    "single": [
+      {
+        "rate": 0.015,
+        "bracket": 105
+      },
+      {
+        "rate": 0.02,
+        "bracket": 1053
+      },
+      {
+        "rate": 0.025,
+        "bracket": 2106
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3159
+      },
+      {
+        "rate": 0.035,
+        "bracket": 4212
+      },
+      {
+        "rate": 0.04,
+        "bracket": 5265
+      },
+      {
+        "rate": 0.045,
+        "bracket": 6318
+      },
+      {
+        "rate": 0.05,
+        "bracket": 7371
+      },
+      {
+        "rate": 0.054,
+        "bracket": 8424
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.015,
+        "bracket": 105
+      },
+      {
+        "rate": 0.02,
+        "bracket": 1053
+      },
+      {
+        "rate": 0.025,
+        "bracket": 2106
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3159
+      },
+      {
+        "rate": 0.035,
+        "bracket": 4212
+      },
+      {
+        "rate": 0.04,
+        "bracket": 5265
+      },
+      {
+        "rate": 0.045,
+        "bracket": 6318
+      },
+      {
+        "rate": 0.05,
+        "bracket": 7371
+      },
+      {
+        "rate": 0.054,
+        "bracket": 8424
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "MT": {
+    "single": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      },
+      {
+        "rate": 0.02,
+        "bracket": 3100
+      },
+      {
+        "rate": 0.03,
+        "bracket": 5400
+      },
+      {
+        "rate": 0.04,
+        "bracket": 8200
+      },
+      {
+        "rate": 0.05,
+        "bracket": 11100
+      },
+      {
+        "rate": 0.06,
+        "bracket": 14300
+      },
+      {
+        "rate": 0.069,
+        "bracket": 18400
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      },
+      {
+        "rate": 0.02,
+        "bracket": 3100
+      },
+      {
+        "rate": 0.03,
+        "bracket": 5400
+      },
+      {
+        "rate": 0.04,
+        "bracket": 8200
+      },
+      {
+        "rate": 0.05,
+        "bracket": 11100
+      },
+      {
+        "rate": 0.06,
+        "bracket": 14300
+      },
+      {
+        "rate": 0.069,
+        "bracket": 18400
+      }
+    ],
+    "deduction": {
+      "single": 4710,
+      "married": 9420
+    }
+  },
+  "NE": {
+    "single": [
+      {
+        "rate": 0.0246,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0351,
+        "bracket": 3230
+      },
+      {
+        "rate": 0.0501,
+        "bracket": 19330
+      },
+      {
+        "rate": 0.0684,
+        "bracket": 31160
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0246,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0351,
+        "bracket": 6440
+      },
+      {
+        "rate": 0.0501,
+        "bracket": 38680
+      },
+      {
+        "rate": 0.0684,
+        "bracket": 62320
+      }
+    ],
+    "deduction": {
+      "single": 6900,
+      "married": 13800
+    }
+  },
+  "NH": {
+    "single": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "NJ": {
+    "single": [
+      {
+        "rate": 0.014,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0175,
+        "bracket": 20000
+      },
+      {
+        "rate": 0.035,
+        "bracket": 35000
+      },
+      {
+        "rate": 0.05525,
+        "bracket": 40000
+      },
+      {
+        "rate": 0.0637,
+        "bracket": 75000
+      },
+      {
+        "rate": 0.0897,
+        "bracket": 500000
+      },
+      {
+        "rate": 0.1075,
+        "bracket": 5000000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.014,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0175,
+        "bracket": 20000
+      },
+      {
+        "rate": 0.0245,
+        "bracket": 50000
+      },
+      {
+        "rate": 0.035,
+        "bracket": 70000
+      },
+      {
+        "rate": 0.05525,
+        "bracket": 80000
+      },
+      {
+        "rate": 0.0637,
+        "bracket": 150000
+      },
+      {
+        "rate": 0.0897,
+        "bracket": 500000
+      },
+      {
+        "rate": 0.1075,
+        "bracket": 5000000
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "NM": {
+    "single": [
+      {
+        "rate": 0.017,
+        "bracket": 0
+      },
+      {
+        "rate": 0.032,
+        "bracket": 5500
+      },
+      {
+        "rate": 0.047,
+        "bracket": 11000
+      },
+      {
+        "rate": 0.049,
+        "bracket": 16000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.017,
+        "bracket": 0
+      },
+      {
+        "rate": 0.032,
+        "bracket": 8000
+      },
+      {
+        "rate": 0.047,
+        "bracket": 16000
+      },
+      {
+        "rate": 0.049,
+        "bracket": 24000
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "NY": {
+    "single": [
+      {
+        "rate": 0.04,
+        "bracket": 0
+      },
+      {
+        "rate": 0.045,
+        "bracket": 8500
+      },
+      {
+        "rate": 0.0525,
+        "bracket": 11700
+      },
+      {
+        "rate": 0.059,
+        "bracket": 13900
+      },
+      {
+        "rate": 0.0621,
+        "bracket": 21400
+      },
+      {
+        "rate": 0.0649,
+        "bracket": 80650
+      },
+      {
+        "rate": 0.0685,
+        "bracket": 215400
+      },
+      {
+        "rate": 0.0882,
+        "bracket": 1077550
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.04,
+        "bracket": 0
+      },
+      {
+        "rate": 0.045,
+        "bracket": 17150
+      },
+      {
+        "rate": 0.0525,
+        "bracket": 23600
+      },
+      {
+        "rate": 0.059,
+        "bracket": 27900
+      },
+      {
+        "rate": 0.0609,
+        "bracket": 43000
+      },
+      {
+        "rate": 0.0641,
+        "bracket": 161550
+      },
+      {
+        "rate": 0.0685,
+        "bracket": 323200
+      },
+      {
+        "rate": 0.0882,
+        "bracket": 2155350
+      }
+    ],
+    "deduction": {
+      "single": 8000,
+      "married": 16050
+    }
+  },
+  "NC": {
+    "single": [
+      {
+        "rate": 0.0525,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0525,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 10750,
+      "married": 21500
+    }
+  },
+  "ND": {
+    "single": [
+      {
+        "rate": 0.011,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0204,
+        "bracket": 39450
+      },
+      {
+        "rate": 0.0227,
+        "bracket": 95500
+      },
+      {
+        "rate": 0.0264,
+        "bracket": 199250
+      },
+      {
+        "rate": 0.029,
+        "bracket": 433200
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.011,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0204,
+        "bracket": 65900
+      },
+      {
+        "rate": 0.0227,
+        "bracket": 159200
+      },
+      {
+        "rate": 0.0264,
+        "bracket": 242550
+      },
+      {
+        "rate": 0.029,
+        "bracket": 433200
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "OH": {
+    "single": [
+      {
+        "rate": 0.0285,
+        "bracket": 21750
+      },
+      {
+        "rate": 0.03326,
+        "bracket": 43450
+      },
+      {
+        "rate": 0.03802,
+        "bracket": 86900
+      },
+      {
+        "rate": 0.04413,
+        "bracket": 108700
+      },
+      {
+        "rate": 0.04797,
+        "bracket": 217400
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0285,
+        "bracket": 21750
+      },
+      {
+        "rate": 0.03326,
+        "bracket": 43450
+      },
+      {
+        "rate": 0.03802,
+        "bracket": 86900
+      },
+      {
+        "rate": 0.04413,
+        "bracket": 108700
+      },
+      {
+        "rate": 0.04797,
+        "bracket": 217400
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "OK": {
+    "single": [
+      {
+        "rate": 0.005,
+        "bracket": 0
+      },
+      {
+        "rate": 0.01,
+        "bracket": 1000
+      },
+      {
+        "rate": 0.02,
+        "bracket": 2500
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3750
+      },
+      {
+        "rate": 0.04,
+        "bracket": 4900
+      },
+      {
+        "rate": 0.05,
+        "bracket": 7200
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.005,
+        "bracket": 0
+      },
+      {
+        "rate": 0.01,
+        "bracket": 2000
+      },
+      {
+        "rate": 0.02,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.03,
+        "bracket": 7500
+      },
+      {
+        "rate": 0.04,
+        "bracket": 9800
+      },
+      {
+        "rate": 0.05,
+        "bracket": 12200
+      }
+    ],
+    "deduction": {
+      "single": 6350,
+      "married": 12700
+    }
+  },
+  "OR": {
+    "single": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      },
+      {
+        "rate": 0.07,
+        "bracket": 3550
+      },
+      {
+        "rate": 0.09,
+        "bracket": 8900
+      },
+      {
+        "rate": 0.099,
+        "bracket": 125000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.05,
+        "bracket": 0
+      },
+      {
+        "rate": 0.07,
+        "bracket": 7100
+      },
+      {
+        "rate": 0.09,
+        "bracket": 17800
+      },
+      {
+        "rate": 0.099,
+        "bracket": 250000
+      }
+    ],
+    "deduction": {
+      "single": 2270,
+      "married": 4545
+    }
+  },
+  "PA": {
+    "single": [
+      {
+        "rate": 0.0307,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0307,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "RI": {
+    "single": [
+      {
+        "rate": 0.0375,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0475,
+        "bracket": 65250
+      },
+      {
+        "rate": 0.0599,
+        "bracket": 148350
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0375,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0475,
+        "bracket": 65250
+      },
+      {
+        "rate": 0.0599,
+        "bracket": 148350
+      }
+    ],
+    "deduction": {
+      "single": 8900,
+      "married": 17800
+    }
+  },
+  "SC": {
+    "single": [
+      {
+        "rate": 0,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3070
+      },
+      {
+        "rate": 0.04,
+        "bracket": 6150
+      },
+      {
+        "rate": 0.05,
+        "bracket": 9230
+      },
+      {
+        "rate": 0.06,
+        "bracket": 12310
+      },
+      {
+        "rate": 0.07,
+        "bracket": 15400
+      }
+    ],
+    "married": [
+      {
+        "rate": 0,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3070
+      },
+      {
+        "rate": 0.04,
+        "bracket": 6150
+      },
+      {
+        "rate": 0.05,
+        "bracket": 9230
+      },
+      {
+        "rate": 0.06,
+        "bracket": 12310
+      },
+      {
+        "rate": 0.07,
+        "bracket": 15400
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  },
+  "TN": {
+    "single": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.01,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "UT": {
+    "single": [
+      {
+        "rate": 0.0495,
+        "bracket": 0
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0495,
+        "bracket": 0
+      }
+    ],
+    "deduction": {
+      "single": 744,
+      "married": 1488
+    }
+  },
+  "VT": {
+    "single": [
+      {
+        "rate": 0.0335,
+        "bracket": 0
+      },
+      {
+        "rate": 0.066,
+        "bracket": 39600
+      },
+      {
+        "rate": 0.076,
+        "bracket": 96000
+      },
+      {
+        "rate": 0.0875,
+        "bracket": 200200
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.0335,
+        "bracket": 0
+      },
+      {
+        "rate": 0.066,
+        "bracket": 66150
+      },
+      {
+        "rate": 0.076,
+        "bracket": 159950
+      },
+      {
+        "rate": 0.0875,
+        "bracket": 243750
+      }
+    ],
+    "deduction": {
+      "single": 6150,
+      "married": 12300
+    }
+  },
+  "VA": {
+    "single": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.0575,
+        "bracket": 17000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.02,
+        "bracket": 0
+      },
+      {
+        "rate": 0.03,
+        "bracket": 3000
+      },
+      {
+        "rate": 0.05,
+        "bracket": 5000
+      },
+      {
+        "rate": 0.0575,
+        "bracket": 17000
+      }
+    ],
+    "deduction": {
+      "single": 4500,
+      "married": 9000
+    }
+  },
+  "WV": {
+    "single": [
+      {
+        "rate": 0.03,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 10000
+      },
+      {
+        "rate": 0.045,
+        "bracket": 25000
+      },
+      {
+        "rate": 0.06,
+        "bracket": 40000
+      },
+      {
+        "rate": 0.065,
+        "bracket": 60000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.03,
+        "bracket": 0
+      },
+      {
+        "rate": 0.04,
+        "bracket": 10000
+      },
+      {
+        "rate": 0.045,
+        "bracket": 25000
+      },
+      {
+        "rate": 0.06,
+        "bracket": 40000
+      },
+      {
+        "rate": 0.065,
+        "bracket": 60000
+      }
+    ],
+    "deduction": {
+      "single": 0,
+      "married": 0
+    }
+  },
+  "WI": {
+    "single": [
+      {
+        "rate": 0.04,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0521,
+        "bracket": 11970
+      },
+      {
+        "rate": 0.0627,
+        "bracket": 23930
+      },
+      {
+        "rate": 0.0765,
+        "bracket": 263480
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.04,
+        "bracket": 0
+      },
+      {
+        "rate": 0.0521,
+        "bracket": 15960
+      },
+      {
+        "rate": 0.0627,
+        "bracket": 31910
+      },
+      {
+        "rate": 0.0765,
+        "bracket": 351310
+      }
+    ],
+    "deduction": {
+      "single": 11050,
+      "married": 20470
+    }
+  },
+  "DC": {
+    "single": [
+      {
+        "rate": 0.04,
+        "bracket": 0
+      },
+      {
+        "rate": 0.06,
+        "bracket": 10000
+      },
+      {
+        "rate": 0.065,
+        "bracket": 40000
+      },
+      {
+        "rate": 0.085,
+        "bracket": 60000
+      },
+      {
+        "rate": 0.0875,
+        "bracket": 350000
+      },
+      {
+        "rate": 0.0895,
+        "bracket": 1000000
+      }
+    ],
+    "married": [
+      {
+        "rate": 0.04,
+        "bracket": 0
+      },
+      {
+        "rate": 0.06,
+        "bracket": 10000
+      },
+      {
+        "rate": 0.065,
+        "bracket": 40000
+      },
+      {
+        "rate": 0.085,
+        "bracket": 60000
+      },
+      {
+        "rate": 0.0875,
+        "bracket": 350000
+      },
+      {
+        "rate": 0.0895,
+        "bracket": 1000000
+      }
+    ],
+    "deduction": {
+      "single": 12400,
+      "married": 24800
+    }
+  }
+}
