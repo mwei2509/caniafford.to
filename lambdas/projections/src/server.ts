@@ -8,7 +8,7 @@ app.use(express.json());
 
 const router = express.Router();
 
-router.get("/projections", (req, res) => {
+router.post("/projections", (req, res) => {
   const projections = runProjections(req.body);
   res.json(projections);
 });

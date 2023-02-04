@@ -44,3 +44,13 @@ services:
     volumes:
       - ./web:/app:delegated
     command: sh -c "npm run start:dev"
+  projections:
+    container_name: projections
+    build:
+      context: ./lambdas/projections
+      dockerfile: ./Dockerfile
+    environment:
+      PORT: 9000
+    ports:
+      - 9000:8080
+    # command: sh -c "npm run start:dev && index.handler"

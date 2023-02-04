@@ -1,5 +1,7 @@
 import type { HouseholdInput, ScenarioInput, Projection } from "./types";
-import Household from "./household/class";
+import createHousehold from "./household";
+import runScenario from "./scenarios";
+import Simulation from "./simulations/Simulation";
 
 type RunProjectionsInput = {
   household: HouseholdInput;
@@ -22,14 +24,35 @@ export default function runProjections({
   /**
    * Run Scenarios.  Scenarios alters the household input information
    */
+  const {
+    user = {},
+    spouse = {},
+    flags = {},
+    scenario = {},
+  } = runScenario({
+    ...inputHousehold,
+    scenario: inputScenarios[activeScenarioId],
+  });
 
   /**
-   * Create Household class.  This includes projection streams
+   * Create the Household with the household input (after scenarios have been
+   * run).  Household includes projection streams
    */
-  const household = new Household(householdInput);
+  const household = createHousehold({ user, spouse, flags, startDate });
 
   /**
    * Simulate monthly actions from start date until projected end date
    */
-  return { years: [1] };
+  const simulation = new Simulation({ household, startDate });
+  simulation.run();
+
+  return {
+    timestamp: new Date().getTime(),
+    alerts: simulation.alerts,
+    years: simulation.record,
+    flags: simulation.flags,
+    streams: simulation.streams,
+    accounts: simulation.accounts,
+    scenario,
+  };
 }

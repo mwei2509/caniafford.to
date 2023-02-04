@@ -6,7 +6,7 @@ orbs:
 workflows:
   main:
     jobs:
-      - build-and-push-image:
+      - build-and-deploy-lambda:
           context:
             - aws-ecr
           # Only run this job on git tag pushes
@@ -16,7 +16,7 @@ workflows:
             tags:
               only: /v[0-9]+(\.[0-9]+)*(-.*)*/
 jobs:
-  build-and-push-image:
+  build-and-deploy-lambda:
     docker:
       - image: cimg/base:2022.12
     resource_class: small
@@ -27,7 +27,7 @@ jobs:
       - checkout
       - setup_remote_docker:
           version: 20.10.14
-      - aws-ecr/build-and-push-image:
+      - aws-ecr/build-and-deploy-lambda:
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-cli-version: latest
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
