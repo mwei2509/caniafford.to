@@ -5,6 +5,13 @@ import { sum } from "lodash";
 import { MONTHS_PER_YEAR, ALERT_LEVEL } from "../constants";
 import { toCents, currencyFormat } from "../utils";
 
+export type monthlyRecord = {
+  actions: any[];
+  warnings: string[];
+  snapshots: any[];
+  analysis: any;
+};
+
 export function runMonthlySimulation(this: Simulation) {
   const beginningOfMonthSnapshots = this.lastMonth
     ? this.lastMonth.snapshots

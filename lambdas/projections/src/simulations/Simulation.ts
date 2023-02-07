@@ -1,7 +1,57 @@
-const { MONTHS_PER_YEAR } = require("../constants");
+import Time from "../Time";
+import { Flags } from "../types";
+import Household from "../household/Household";
+import { HouseholdStreamInfo } from "../household/streams";
+import { setPreviousYear, endOfYearTaxes } from "./yearly";
+import {
+  runMonthlySimulation,
+  monthlyRecord,
+  getIncomeAndCalculateSpending,
+  getSurplusAvailable,
+  endOfMonthGrowAccounts,
+  endOfMonthAnalysis,
+} from "./monthly";
+import type { alert, record } from "./types";
+
+const { MONTHS_PER_YEAR, ALERT_LEVEL } = require("../constants");
 const { addYears, isBefore, addMonths } = require("date-fns");
+import {
+  withdrawFromBank,
+  tryToMeetDeficit,
+  depositIntoBank,
+} from "./withdraw";
 
 export class Simulation {
+  // withdraw
+  public withdrawFromBank = withdrawFromBank;
+  public tryToMeetDeficit = tryToMeetDeficit;
+  public depositIntoBank = depositIntoBank;
+  // yearly
+  public setPreviousYear = setPreviousYear;
+  public endOfYearTaxes = endOfYearTaxes;
+
+  // monthly
+  public runMonthlySimulation = runMonthlySimulation;
+  public getIncomeAndCalculateSpending = getIncomeAndCalculateSpending;
+  public getSurplusAvailable = getSurplusAvailable;
+  public endOfMonthGrowAccounts = endOfMonthGrowAccounts;
+  public endOfMonthAnalysis = endOfMonthAnalysis;
+
+  public lastMonth: monthlyRecord;
+
+  public household: Household;
+  public streams: HouseholdStreamInfo;
+  public accounts: any[]; // fix this
+  public stop: boolean;
+
+  public time: Time;
+  public flags: Flags;
+  public alerts: { unique: alert[]; all: alert[]; byYear: {} };
+  public record: record;
+
+  public start: Date;
+  public end: Date;
+
   constructor({ household, startDate = new Date() }) {
     this.household = household;
     this.time = this.household.time;
@@ -23,7 +73,7 @@ export class Simulation {
     };
   }
 
-  addAlert(alert, level, notes = []) {
+  addAlert(alert, level = ALERT_LEVEL.notice, notes = []) {
     const timeStampedAlert = {
       alert: `${alert} - ${this.time.month + 1}/${this.time.year}`,
       level,

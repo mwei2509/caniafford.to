@@ -543,7 +543,7 @@ export function withdrawFromGrowthAccounts(this: Household, amount: number) {
   };
 }
 
-export function makeHardshipWithdrawal(this: Household) {
+export function makeHardshipWithdrawal(this: Household, amount: number) {
   return {
     withdrawn: 0,
     actions: [],

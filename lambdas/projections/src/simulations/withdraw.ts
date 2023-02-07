@@ -1,12 +1,14 @@
-const { ALERT_LEVEL } = require('../constants');
-const { currencyFormat } = require('../utils');
+const { ALERT_LEVEL } = require("../constants");
+const { currencyFormat } = require("../utils");
+import Simulation from "./Simulation";
 
 /**
  * withdraw spending - strategy (e.g. smartdraw stuff)
  * @param {number} neededWithdrawal
  */
-function withdrawFromBank(neededWithdrawal) {
-  const { withdrawn, actions } = this.household.withdrawFromBank(neededWithdrawal);
+export function withdrawFromBank(this: Simulation, neededWithdrawal: number) {
+  const { withdrawn, actions } =
+    this.household.withdrawFromBank(neededWithdrawal);
 
   return {
     deficit: neededWithdrawal - withdrawn,
@@ -14,7 +16,7 @@ function withdrawFromBank(neededWithdrawal) {
   };
 }
 
-function depositIntoBank(leftoverIncome) {
+export function depositIntoBank(this: Simulation, leftoverIncome) {
   const incomeDepositAction = this.household.deposit(leftoverIncome);
   return incomeDepositAction;
 }
@@ -23,19 +25,21 @@ function depositIntoBank(leftoverIncome) {
  * withdraw deficit/where we fell short
  * @param {number} neededAmount
  */
-function tryToMeetDeficit(deficit) {
+export function tryToMeetDeficit(this: Simulation, deficit) {
   let remainingWithdrawal = deficit;
   const actions = [];
 
   if (remainingWithdrawal > 0) {
     // withdraw from retirement accounts (if possible)
-    const { withdrawn, actions: withdrawalActions } = this.household.withdrawFromGrowthAccounts(remainingWithdrawal);
+    const { withdrawn, actions: withdrawalActions } =
+      this.household.withdrawFromGrowthAccounts(remainingWithdrawal);
     actions.push(...withdrawalActions);
     remainingWithdrawal -= withdrawn;
     if (withdrawn > 0) {
       this.addAlert(
-        `Withdrew ${currencyFormat(withdrawn)} from ${withdrawalActions.map(action =>
-          action.from.accountType).join(',')}`,
+        `Withdrew ${currencyFormat(withdrawn)} from ${withdrawalActions
+          .map((action) => action.from.accountType)
+          .join(",")}`,
         ALERT_LEVEL.warning
       );
     }
@@ -43,14 +47,15 @@ function tryToMeetDeficit(deficit) {
 
   // make hardship distributions
   if (remainingWithdrawal > 0) {
-    const {
-      withdrawn,
-      actions: hardshipWithdrawalActions,
-    } = this.household.makeHardshipWithdrawal(remainingWithdrawal);
+    const { withdrawn, actions: hardshipWithdrawalActions } =
+      this.household.makeHardshipWithdrawal(remainingWithdrawal);
     actions.push(...hardshipWithdrawalActions);
     remainingWithdrawal -= withdrawn;
     if (withdrawn > 0) {
-      this.addAlert(`Withdrew ${currencyFormat(withdrawn)} as hardship withdrawal`, ALERT_LEVEL.warning);
+      this.addAlert(
+        `Withdrew ${currencyFormat(withdrawn)} as hardship withdrawal`,
+        ALERT_LEVEL.warning
+      );
     }
   }
 
@@ -73,9 +78,3 @@ function tryToMeetDeficit(deficit) {
     actions,
   };
 }
-
-module.exports = {
-  withdrawFromBank,
-  depositIntoBank,
-  tryToMeetDeficit,
-};

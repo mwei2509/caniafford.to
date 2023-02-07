@@ -178,7 +178,7 @@ export function getMinimumDebtPayment() {
   );
 }
 
-export function payMinimumDebt(amountToPay) {
+export function payMinimumDebt(amountToPay = 0) {
   const { minimumCreditCardPayments, fixedRateLoanPayments } =
     this.paymentsToAvoidFees();
 

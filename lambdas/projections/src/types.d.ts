@@ -17,6 +17,7 @@ export interface Flags {
   taxInflationRate: number;
   makeHardshipDistributions: boolean;
   stateProvince: string;
+  makeHardshipDistrubitions?: boolean;
 }
 
 export interface AccountInput {}
@@ -29,7 +30,13 @@ export interface HouseholdInput {
 }
 
 export interface Projection {
-  years?: number[];
+  timestamp: number;
+  alerts: any;
+  years?: any;
+  flags: Flags;
+  streams: any;
+  accounts: any;
+  scenario: any;
 }
 
 export interface ScenarioInput {}

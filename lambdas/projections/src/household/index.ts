@@ -1,3 +1,5 @@
+import { Flags } from "../types";
+
 const Household = require("./index");
 const {
   SURPLUS_MINIMUM_BUFFER,
@@ -6,7 +8,17 @@ const {
 } = require("../constants");
 const { getPercent } = require("../utils");
 
-function createHousehold({ user = {}, spouse = {}, flags = {} }) {
+function createHousehold({
+  user = {},
+  spouse = {},
+  flags,
+  startDate = new Date(),
+}: {
+  user: any;
+  spouse: any;
+  flags: Flags;
+  startDate: Date;
+}) {
   const {
     debtPayType = null,
     loanEarlyPayoff = false,
@@ -49,6 +61,7 @@ function createHousehold({ user = {}, spouse = {}, flags = {} }) {
   return new Household({
     user,
     spouse,
+    startDate,
     flags: {
       years,
       percentSurplusToInvest: getPercent(percentSurplusToInvest),

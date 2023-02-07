@@ -16,8 +16,8 @@ type RunProjectionsInput = {
  * @returns {Projections}
  */
 export default function runProjections({
-  household: householdInput = { user: { accounts: [] } },
-  scenarios = {},
+  household: householdInput,
+  scenarios: schenarioInput = {},
   activeScenarioId,
   startDate = new Date(),
 }: RunProjectionsInput): Projection {
@@ -30,8 +30,8 @@ export default function runProjections({
     flags = {},
     scenario = {},
   } = runScenario({
-    ...inputHousehold,
-    scenario: inputScenarios[activeScenarioId],
+    ...householdInput,
+    scenario: schenarioInput[activeScenarioId],
   });
 
   /**

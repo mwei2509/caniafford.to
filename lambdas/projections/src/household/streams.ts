@@ -1,6 +1,31 @@
 import type { Household } from "./Household";
 import { rateToMonthly, rateToYearly } from "../utils";
 
+export type CleanedStreamInfo = {
+  originalInputs: any;
+  shadowKey: string;
+  type: string;
+  description: string;
+  amount: number;
+  startDate: Date;
+  endDate: Date;
+  inflationRate: Number;
+  startNotes: String[];
+  endNotes: String[];
+};
+export interface CleanedIncome extends CleanedStreamInfo {
+  incomeTaxRate: number;
+  ficaTaxRate: number;
+  netIncomeMonthly: number;
+  grossIncomeMonthly: number;
+  netIncomeYearly: number;
+  grossIncomeYearly: number;
+}
+export type HouseholdStreamInfo = {
+  income: CleanedIncome[];
+  spending: CleanedStreamInfo[];
+};
+
 export function getActiveIncomes(this: Household) {
   return [...this.user.incomes, ...this.spouse.incomes].filter((income) =>
     income.isActive()
@@ -37,7 +62,7 @@ export function getIncomeSnapshots(this: Household) {
   );
 }
 
-export function getStreamInfo(this: Household) {
+export function getStreamInfo(this: Household): HouseholdStreamInfo {
   const clean = ({
     originalInputs,
     shadowKey,
@@ -49,7 +74,7 @@ export function getStreamInfo(this: Household) {
     inflationRate,
     startNotes,
     endNotes,
-  }) => {
+  }): CleanedStreamInfo => {
     return {
       originalInputs,
       shadowKey,

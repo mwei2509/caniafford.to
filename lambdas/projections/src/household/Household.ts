@@ -6,6 +6,7 @@ import {
   getActiveIncomes,
   getSpendingSnapshots,
   getIncomeSnapshots,
+  getStreamInfo,
 } from "./streams";
 import {
   deposit,
@@ -60,7 +61,13 @@ import {
   employerMatchContribution,
   pretaxContribution,
   makeWithdrawal,
+  withdrawFromGrowthAccounts,
+  makeHardshipWithdrawal,
+  depositToEmployerPlans,
+  depositIntoRetirementAccounts,
+  depositIntoBrokerageAccounts,
 } from "./investments";
+import { getAccountInfo, yearlyAccountReset } from "./accounts";
 import IRS from "../irs/Irs";
 import type { taxableIncome } from "../irs/types.d";
 import Time from "../time";
@@ -76,6 +83,11 @@ export class Household {
   public getActiveIncomes = getActiveIncomes;
   public getSpendingSnapshots = getSpendingSnapshots;
   public getIncomeSnapshots = getIncomeSnapshots;
+  public getStreamInfo = getStreamInfo;
+
+  // accounts
+  public getAccountInfo = getAccountInfo;
+  public yearlyAccountReset = yearlyAccountReset;
 
   // bank
   public deposit = deposit;
@@ -132,6 +144,11 @@ export class Household {
   public employerMatchContribution = employerMatchContribution;
   public pretaxContribution = pretaxContribution;
   public makeWithdrawal = makeWithdrawal;
+  public withdrawFromGrowthAccounts = withdrawFromGrowthAccounts;
+  public makeHardshipWithdrawal = makeHardshipWithdrawal;
+  public depositToEmployerPlans = depositToEmployerPlans;
+  public depositIntoRetirementAccounts = depositIntoRetirementAccounts;
+  public depositIntoBrokerageAccounts = depositIntoBrokerageAccounts;
 
   public user: Person;
   public spouse?: Person;
