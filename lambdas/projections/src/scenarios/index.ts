@@ -10,7 +10,7 @@ const EVENT_TYPES = {
   oneTimeExpense: "one-time-expense",
 };
 
-function runScenario(context = {}) {
+function runScenario(context: any = {}) {
   if (!context.scenario || !context.scenario.id) {
     return { ...context, scenario: {} };
   }

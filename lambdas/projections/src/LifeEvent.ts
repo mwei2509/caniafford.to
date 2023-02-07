@@ -1,3 +1,7 @@
+import Household from "./household/Household";
+import Person from "./Person";
+import Time from "./Time";
+
 const EVENT_TYPES = {
   openLoan: "open loan",
   openCreditLine: "open credit",
@@ -8,6 +12,13 @@ const EVENT_TYPES = {
 
 // simulations happen at the beginning of the month
 class LifeEvent {
+  public owner: Person;
+  public time: Time;
+  public type: string;
+  public dateToRun: Date;
+  public ran: boolean;
+  public accountToOpen: any;
+
   constructor(props) {
     const { type, dateToRun, owner, accountToOpen } = props;
 
@@ -32,7 +43,7 @@ class LifeEvent {
     return false;
   }
 
-  run({ household = {} }) {
+  run({ household }: { household: Household }) {
     switch (this.type) {
       case EVENT_TYPES.openLoan:
         this.openLoan(household);
@@ -41,7 +52,7 @@ class LifeEvent {
     this.ran = true;
   }
 
-  openLoan(household = {}) {
+  openLoan(household: Household) {
     if (!this.accountToOpen) {
       console.error("no account to open");
       return;

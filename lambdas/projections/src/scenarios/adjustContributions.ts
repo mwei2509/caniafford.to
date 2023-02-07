@@ -6,7 +6,7 @@ export default function simulateAdjustContributions(scenario, inputs) {
   } = scenario;
 
   // end old account
-  let accountFound = false;
+  let accountFound: any = false;
   for (const account of inputs.user.investmentAccounts || []) {
     if (accountToAdjust === account.shadowKey) {
       accountFound = account;

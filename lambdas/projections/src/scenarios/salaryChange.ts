@@ -14,7 +14,7 @@ export default function simulateSalaryChange(scenario, inputs) {
 
   // end old income
   let person = "";
-  let incomeFound = false;
+  let incomeFound: any = false;
   for (const income of inputs.user.incomes || []) {
     if (oldIncome === income.shadowKey) {
       person = "user";
