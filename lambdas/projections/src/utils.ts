@@ -49,10 +49,10 @@ const TOLER = 1;
 const MAX_ITER = 100;
 const h = 1;
 export function newtonOptimization(
-  fn: (number) => number,
+  fn: (any) => any,
   x0: number,
   key: string
-) {
+): any {
   let xn = x0;
   let res = {};
 

@@ -7,7 +7,7 @@ type RunProjectionsInput = {
   household: HouseholdInput;
   scenarios: ScenarioInput;
   activeScenarioId: number;
-  startDate: Date;
+  startDate: string;
 };
 
 /**
@@ -19,8 +19,11 @@ export default function runProjections({
   household: householdInput,
   scenarios: schenarioInput = {},
   activeScenarioId,
-  startDate = new Date(),
+  startDate: startDateInput = "",
 }: RunProjectionsInput): Projection {
+  const startDate: Date = startDateInput
+    ? new Date(startDateInput)
+    : new Date();
   /**
    * Run Scenarios.  Scenarios alters the household input information
    */

@@ -5,6 +5,7 @@ import {
   getIraContributionLimitsWithDeductions,
   getRothContributionLimits,
 } from "./contributionLimits";
+import { calculateUnemployment } from "./unemployment";
 import Time from "../Time";
 import type { Flags } from "../types";
 import Person from "../Person";
@@ -28,6 +29,8 @@ class IRS {
     getIraContributionLimitsWithDeductions;
   public getRothContributionLimits = getRothContributionLimits;
 
+  // unemployment
+  public calculateUnemployment = calculateUnemployment;
   constructor(props) {
     const { user, spouse } = props;
 

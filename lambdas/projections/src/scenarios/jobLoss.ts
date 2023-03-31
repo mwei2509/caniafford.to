@@ -1,7 +1,7 @@
-const createHousehold = require("../household/create");
-const { copyObject } = require("../utils");
-const { addWeeks, isAfter } = require("date-fns");
-const shortid = require("shortid");
+import createHousehold from "../household";
+import { copyObject } from "../utils";
+import { addWeeks, isAfter } from "date-fns";
+import shortid from "shortid";
 
 export default function simulateJobLoss(scenario, inputs) {
   const {

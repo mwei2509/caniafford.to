@@ -1,6 +1,7 @@
 import type { Household } from "./Household";
 
 import { sum } from "lodash";
+import { BANK_ACCOUNT_TYPES } from "../constants";
 import Bank from "../accounts/Bank";
 
 export function getOpenBankAccounts(this: Household) {
@@ -23,7 +24,7 @@ export function setMainDepositAccount(this: Household) {
   if (this.getOpenBankAccounts().length === 0) {
     // create autoDepositAccount
     this.mainDepositAccount = new Bank({
-      type: "checkings",
+      type: BANK_ACCOUNT_TYPES.checkings,
       balance: 0,
       owner: this.user,
     });

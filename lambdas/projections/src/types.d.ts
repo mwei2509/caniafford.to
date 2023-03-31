@@ -26,7 +26,7 @@ export interface HouseholdInput {
   user: UserInput;
   spouse?: UserInput;
   flags: Flags;
-  startDate: string; // converts to Date
+  startDate: Date;
 }
 
 export interface Projection {

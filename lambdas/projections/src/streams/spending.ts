@@ -1,5 +1,5 @@
 import StreamItem from "./streamItem";
-import { SPENDING_TYPES } from "../../constants";
+import { SPENDING_TYPES } from "../constants";
 import { GENERAL_INFLATION_RATE } from "../constants";
 
 class Spending extends StreamItem {

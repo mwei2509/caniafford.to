@@ -1,12 +1,12 @@
 import { Flags } from "../types";
 
-const Household = require("./index");
-const {
+import Household from "./Household";
+import {
   SURPLUS_MINIMUM_BUFFER,
   DEFAULT_SIMULATION_YEARS,
   GENERAL_INFLATION_RATE,
-} = require("../constants");
-const { getPercent } = require("../utils");
+} from "../constants";
+import { getPercent } from "../utils";
 
 function createHousehold({
   user = {},

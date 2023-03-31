@@ -52,14 +52,20 @@ export class Simulation {
   public start: Date;
   public end: Date;
 
-  constructor({ household, startDate = new Date() }) {
+  constructor({
+    household,
+    startDate,
+  }: {
+    household: Household;
+    startDate: Date;
+  }) {
     this.household = household;
     this.time = this.household.time;
     this.flags = this.household.flags;
 
     this.streams = this.household.getStreamInfo();
     this.accounts = this.household.getAccountInfo();
-    this.start = new Date(startDate);
+    this.start = startDate;
     this.end = new Date(
       addYears(this.start, this.flags.years).getUTCFullYear(),
       12,

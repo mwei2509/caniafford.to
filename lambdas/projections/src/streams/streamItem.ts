@@ -26,12 +26,14 @@ class StreamItem {
   public isPresentValue: boolean;
 
   public originalInputs: any; // fix later
-  public startNotes: string;
+  public startNotes: string[];
   public endNotes: string;
   public shadowKey: string;
   public type: string;
   public description: string;
   public accountId: number;
+
+  public spending: boolean;
 
   constructor(props) {
     const {

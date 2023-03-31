@@ -14,6 +14,31 @@ const IncomeTypes = {
 };
 
 class Income extends StreamItem {
+  public deductions: {
+    warnings: string[];
+    totalDeductions: number;
+    _401k: {
+      annualContribution: number;
+      annualEmployerMatch: number;
+      employerPlanAccountKey: string;
+      monthlyContribution: number;
+      monthlyEmployerMatch: number;
+    };
+  };
+  public employerPlanAccountKey: string;
+  public withholdings: {
+    ficaTaxed: number;
+    stateTaxed: number;
+    localTaxed: number;
+    fedTaxed: number;
+  };
+  public netIncome: { amount: number; rate: number };
+  public incomeTaxRate: number;
+  public ficaTaxRate: number;
+  public ficaWithheld: any;
+  public incomeTaxWithheld: any;
+  public preTaxContributions: any;
+
   constructor(props) {
     /**
      * props:
